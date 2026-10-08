@@ -40,6 +40,22 @@
         .gold-gradient {
             background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
         }
+        /* Gallery tab styles */
+        .gallery-tab {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid #e2e8f0;
+        }
+        .gallery-tab:hover {
+            background: #fef3c7;
+            color: #b45309;
+        }
+        .gallery-tab.active {
+            background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+        }
     </style>
 </head>
 <body class="bg-brand-lightBg text-slate-800 antialiased font-sans selection:bg-amber-500 selection:text-white">
@@ -61,6 +77,7 @@
                 <a href="#overview" class="hover:text-amber-400 transition-colors">Overview</a>
                 <a href="#vision" class="hover:text-amber-400 transition-colors">Vision & Values</a>
                 <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                <a href="#gallery" class="hover:text-amber-400 transition-colors">Gallery</a>
                 <a href="#advantages" class="hover:text-amber-400 transition-colors">Why Us</a>
                 <a href="#leadership" class="hover:text-amber-400 transition-colors">Leadership</a>
                 <a href="#contact" class="px-4 py-2 rounded-lg gold-gradient text-white font-semibold hover:opacity-90 shadow-md transition-all">Contact Us</a>
@@ -77,6 +94,7 @@
             <a href="#overview" class="block text-slate-300 hover:text-amber-400 py-1">Overview</a>
             <a href="#vision" class="block text-slate-300 hover:text-amber-400 py-1">Vision & Values</a>
             <a href="#services" class="block text-slate-300 hover:text-amber-400 py-1">Services</a>
+            <a href="#gallery" class="block text-slate-300 hover:text-amber-400 py-1">Gallery</a>
             <a href="#advantages" class="block text-slate-300 hover:text-amber-400 py-1">Why Us</a>
             <a href="#leadership" class="block text-slate-300 hover:text-amber-400 py-1">Leadership</a>
             <a href="#contact" class="block text-amber-400 font-semibold py-1">Contact Us</a>
@@ -84,7 +102,6 @@
     </header>
 
     <section class="relative hero-gradient text-white pt-32 pb-24 md:pt-44 md:pb-36 overflow-hidden">
-        <!-- Abstract Decorative Glows -->
         <div class="absolute top-1/4 left-10 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -185,7 +202,6 @@
                 <div class="w-16 h-1 bg-amber-500 mx-auto rounded-full"></div>
             </div>
 
-            <!-- Vision Box -->
             <div class="bg-brand-navy text-white rounded-3xl p-8 md:p-12 mb-12 shadow-xl relative overflow-hidden">
                 <div class="absolute right-0 bottom-0 translate-x-10 translate-y-10 text-slate-800/40 text-9xl pointer-events-none">
                     <i class="fa-solid fa-eye"></i>
@@ -199,7 +215,6 @@
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- Mission -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
                     <div class="flex items-center space-x-3 mb-6">
                         <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold">
@@ -223,7 +238,6 @@
                     </ul>
                 </div>
 
-                <!-- Core Values -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
                     <div class="flex items-center space-x-3 mb-6">
                         <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold">
@@ -276,7 +290,6 @@
             </div>
 
             <div class="space-y-16">
-                <!-- Service 1: Conferences & Corporate Events -->
                 <div class="bg-brand-lightBg rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all grid grid-cols-1 lg:grid-cols-12">
                     <div class="lg:col-span-5 bg-brand-navy p-8 lg:p-12 text-white flex flex-col justify-between">
                         <div>
@@ -324,7 +337,6 @@
                     </div>
                 </div>
 
-                <!-- Service 2: Promotional Activities & Brand Activation -->
                 <div class="bg-brand-lightBg rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all grid grid-cols-1 lg:grid-cols-12">
                     <div class="lg:col-span-5 bg-gradient-to-br from-amber-600 to-amber-700 p-8 lg:p-12 text-white flex flex-col justify-between">
                         <div>
@@ -378,7 +390,6 @@
                     </div>
                 </div>
 
-                <!-- Service 3: Boardroom Meetings & Executive Corporate Events -->
                 <div class="bg-brand-lightBg rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition-all grid grid-cols-1 lg:grid-cols-12">
                     <div class="lg:col-span-5 bg-slate-800 p-8 lg:p-12 text-white flex flex-col justify-between">
                         <div>
@@ -424,6 +435,82 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ GALLERY SECTION ============ -->
+    <section id="gallery" class="py-20 bg-brand-lightBg border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs uppercase tracking-widest text-amber-600 font-bold mb-3">Our Portfolio</h2>
+                <h3 class="text-3xl font-extrabold text-slate-900 mb-4">Events We've Delivered</h3>
+                <p class="text-slate-600">A glimpse into the impactful experiences we've created across corporate events, conferences, boardroom meetings, product launches, and brand activations.</p>
+                <div class="w-16 h-1 bg-amber-500 mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="gallery-tab active px-5 py-2.5 rounded-xl text-sm font-semibold transition-all" data-target="corporate-events">Corporate Events</button>
+                <button class="gallery-tab px-5 py-2.5 rounded-xl text-sm font-semibold transition-all" data-target="conference-meet">Conference Meet</button>
+                <button class="gallery-tab px-5 py-2.5 rounded-xl text-sm font-semibold transition-all" data-target="boardroom-meet">Boardroom Meet</button>
+                <button class="gallery-tab px-5 py-2.5 rounded-xl text-sm font-semibold transition-all" data-target="product-launch">Product Launch</button>
+                <button class="gallery-tab px-5 py-2.5 rounded-xl text-sm font-semibold transition-all" data-target="brand-promotions">Brand Promotions</button>
+            </div>
+
+            <!-- Corporate Events -->
+            <div class="gallery-panel" id="panel-corporate-events">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <img src="images/corporate-events/01.jpg" alt="Corporate Event" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/corporate-events/02.jpg" alt="Corporate Event" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/corporate-events/03.jpg" alt="Corporate Event" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/corporate-events/04.jpg" alt="Corporate Event" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/corporate-events/05.jpg" alt="Corporate Event" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Conference Meet -->
+            <div class="gallery-panel hidden" id="panel-conference-meet">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <img src="images/conference-meet/01.jpg" alt="Conference Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/conference-meet/02.jpg" alt="Conference Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/conference-meet/03.jpg" alt="Conference Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/conference-meet/04.jpg" alt="Conference Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/conference-meet/05.jpg" alt="Conference Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Boardroom Meet -->
+            <div class="gallery-panel hidden" id="panel-boardroom-meet">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <img src="images/boardroom-meet/01.jpg" alt="Boardroom Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/boardroom-meet/02.jpg" alt="Boardroom Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/boardroom-meet/03.jpg" alt="Boardroom Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/boardroom-meet/04.jpg" alt="Boardroom Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/boardroom-meet/05.jpg" alt="Boardroom Meet" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Product Launch -->
+            <div class="gallery-panel hidden" id="panel-product-launch">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <img src="images/product-launch/01.jpg" alt="Product Launch" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/product-launch/02.jpg" alt="Product Launch" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/product-launch/03.jpg" alt="Product Launch" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/product-launch/04.jpg" alt="Product Launch" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/product-launch/05.jpg" alt="Product Launch" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                </div>
+            </div>
+
+            <!-- Brand Promotions -->
+            <div class="gallery-panel hidden" id="panel-brand-promotions">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <img src="images/brand-promotions/01.jpg" alt="Brand Promotion" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/brand-promotions/02.jpg" alt="Brand Promotion" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/brand-promotions/03.jpg" alt="Brand Promotion" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/brand-promotions/04.jpg" alt="Brand Promotion" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
+                    <img src="images/brand-promotions/05.jpg" alt="Brand Promotion" loading="lazy" class="w-full h-48 object-cover rounded-xl shadow-sm hover:shadow-lg hover:scale-[1.03] transition-all duration-300 cursor-pointer">
                 </div>
             </div>
         </div>
@@ -501,7 +588,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Leader 1 -->
                 <div class="bg-brand-lightBg rounded-3xl border border-slate-200 p-8 text-center shadow-sm hover:shadow-md transition-all">
                     <div class="w-24 h-24 rounded-full gold-gradient mx-auto mb-6 flex items-center justify-center text-white text-3xl font-extrabold shadow-md">
                         AA
@@ -513,7 +599,6 @@
                     </p>
                 </div>
 
-                <!-- Leader 2 -->
                 <div class="bg-brand-lightBg rounded-3xl border border-slate-200 p-8 text-center shadow-sm hover:shadow-md transition-all">
                     <div class="w-24 h-24 rounded-full bg-slate-800 mx-auto mb-6 flex items-center justify-center text-white text-3xl font-extrabold shadow-md">
                         PA
@@ -525,7 +610,6 @@
                     </p>
                 </div>
 
-                <!-- Leader 3 -->
                 <div class="bg-brand-lightBg rounded-3xl border border-slate-200 p-8 text-center shadow-sm hover:shadow-md transition-all">
                     <div class="w-24 h-24 rounded-full bg-brand-navy mx-auto mb-6 flex items-center justify-center text-white text-3xl font-extrabold shadow-md">
                         SS
@@ -625,6 +709,27 @@
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
                 menu.classList.add('hidden');
+            });
+        });
+
+        // Gallery tab switching
+        const tabs = document.querySelectorAll('.gallery-tab');
+        const panels = document.querySelectorAll('.gallery-panel');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                panels.forEach(panel => {
+                    if (panel.id === 'panel-' + target) {
+                        panel.classList.remove('hidden');
+                    } else {
+                        panel.classList.add('hidden');
+                    }
+                });
             });
         });
     </script>
